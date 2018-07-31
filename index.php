@@ -31,6 +31,8 @@ $aluno->insert();
 
 echo $aluno;
 */
+/*
+//altera utilizador
 
 $usuario = new Usuario();
 
@@ -39,5 +41,11 @@ $usuario->loadByID(7);
 $usuario->update("professor","53/&/(g)");
 
 echo "$usuario";
+*/
 
+$usuario = new Usuario();
+$usuario->loadByID(7);
+$usuario->delete();
+
+echo "$usuario";
  ?>
